@@ -1,0 +1,29 @@
+.product contaner{
+  display: grid;
+card{width: 300px};
+@media (min-width: 992px){
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;}
+@media (min-width: 600px) {
+grid-template-columns: repeat(2, 1fr)};
+grid-template-columns: 1fr;
+gap: 30px;
+}
+.card{
+box-shadow: 0 2px 5px rgba (0,0,0,0.1);
+border-radius: 8px;
+padding: 15px;
+background-color: white;
+}
+.add{
+background-color: #4CAF50 ;
+color:white;
+padding: 10px 20px ;
+border-radius: 5px ;
+transition: background-color 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+.add:hover{filter: brightness(1.85);
+transform: translateY(-2px);
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15)}; 
+.btn-add:active {transform: translateY(0);
+box-shadow: 0 2px 5px rgba(125, 119, 119, 0.055)};
+}
